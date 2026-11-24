@@ -17,7 +17,7 @@ fs.writeFileSync(out, html);
   await p.goto('file://' + out); await p.evaluate(() => document.fonts.ready);
   await p.pdf({ path: path.join(__dirname, 'EM2_TermProject_Report.pdf'), format: 'A4', printBackground: true,
     displayHeaderFooter: true, headerTemplate: '<span></span>',
-    footerTemplate: '<div style="font-size:8px;width:100%;text-align:center;color:#777"><span class="pageNumber"></span> / <span class="totalPages"></span></div>',
+    footerTemplate: '<div style="font-size:8px;width:100%;text-align:center;color:#000"><span class="pageNumber"></span> / <span class="totalPages"></span></div>',
     margin: { top: '18mm', bottom: '18mm', left: '17mm', right: '17mm' } });
   await b.close(); fs.unlinkSync(out);
 })();

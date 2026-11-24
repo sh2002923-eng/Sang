@@ -5,59 +5,39 @@
 <title>EM2 TMS Term Project Report</title>
 <!--KATEX_CSS-->
 <style>
-  :root { --ink:#1b222c; --mute:#566170; --line:#cfd6df; --accent:#1f5fa8; --soft:#eef4fb; }
   * { box-sizing: border-box; }
-  body { font-family: "NanumBarunGothic","NanumGothic",sans-serif; color: var(--ink); font-size: 10pt; line-height: 1.68; margin: 0; }
-  h1 { font-family:"NanumSquare",sans-serif; font-size: 19pt; line-height: 1.35; margin: 0 0 6pt; }
-  h2 { font-family:"NanumSquare",sans-serif; font-size: 13.5pt; margin: 22pt 0 8pt; padding-bottom: 3pt; border-bottom: 2px solid var(--accent); color: var(--accent); break-after: avoid; }
-  h3 { font-family:"NanumSquare",sans-serif; font-size: 11pt; margin: 14pt 0 5pt; break-after: avoid; }
-  h4 { font-size: 10pt; margin: 10pt 0 3pt; color: var(--accent); break-after: avoid; }
-  p { margin: 0 0 6pt; text-align: justify; }
-  ul, ol { margin: 0 0 6pt; padding-left: 17pt; }
-  li { margin-bottom: 2.5pt; }
-  table { border-collapse: collapse; margin: 6pt auto 4pt; font-size: 9pt; break-inside: avoid; }
+  body { font-family: "NanumMyeongjo","Nanum Myeongjo",serif; color: #000; font-size: 10.5pt; line-height: 1.75; margin: 0; }
+  h1 { font-size: 16pt; line-height: 1.4; margin: 0 0 10pt; text-align: center; font-weight: 700; }
+  h2 { font-size: 13pt; margin: 20pt 0 8pt; font-weight: 700; break-after: avoid; }
+  h3 { font-size: 11.5pt; margin: 14pt 0 5pt; font-weight: 700; break-after: avoid; }
+  h4 { font-size: 10.5pt; margin: 12pt 0 4pt; font-weight: 700; break-after: avoid; }
+  p { margin: 0 0 7pt; text-align: justify; }
+  ul, ol { margin: 0 0 7pt; padding-left: 18pt; }
+  li { margin-bottom: 2pt; }
+  table { border-collapse: collapse; margin: 6pt auto 6pt; font-size: 9.5pt; break-inside: avoid; }
   table.w { width: 100%; }
-  th, td { border: 1px solid var(--line); padding: 3.5pt 7pt; text-align: center; vertical-align: middle; }
-  th { background: var(--soft); font-weight: 700; }
+  th, td { border: 1px solid #000; padding: 3pt 7pt; text-align: center; vertical-align: middle; }
+  th { font-weight: 700; }
   td.l, th.l { text-align: left; }
-  caption { caption-side: top; font-size: 9pt; color: var(--mute); margin-bottom: 3pt; text-align: center; }
-  code { font-family: "NanumGothicCoding", monospace; font-size: 8.8pt; background: #f1f3f6; padding: 0.5pt 3pt; border-radius: 2pt; }
-  pre { font-family: "NanumGothicCoding", monospace; font-size: 7.6pt; line-height: 1.45; background: #f6f7f9; border: 1px solid var(--line); padding: 7pt 9pt; white-space: pre-wrap; word-break: break-all; margin: 5pt 0 9pt; }
+  caption { caption-side: top; font-size: 9.5pt; margin-bottom: 3pt; text-align: center; }
+  code { font-family: "NanumGothicCoding", monospace; font-size: 9pt; }
+  pre { font-family: "NanumGothicCoding", monospace; font-size: 7.6pt; line-height: 1.45; white-space: pre-wrap; word-break: break-all; margin: 5pt 0 9pt; }
   figure { margin: 9pt 0 10pt; text-align: center; break-inside: avoid; }
   figure img { max-width: 100%; }
-  figcaption { font-size: 8.8pt; color: var(--mute); margin-top: 3pt; text-align: center; line-height: 1.5; }
-  .katex { font-size: 1.04em; }
+  figcaption { font-size: 9.5pt; margin-top: 3pt; text-align: center; line-height: 1.5; }
+  .katex { font-size: 1.02em; }
   .katex-display { margin: 7pt 0 8pt; break-inside: avoid; }
-  .cover { border: 1px solid var(--line); border-top: 4px solid var(--accent); padding: 14pt 16pt 10pt; margin-bottom: 14pt; }
-  .cover .meta { color: var(--mute); font-size: 9.5pt; margin-top: 6pt; }
-  .cover table { margin: 9pt 0 0; font-size: 9.5pt; }
-  .box { border: 1px solid var(--line); border-left: 4px solid var(--accent); background: var(--soft); padding: 7pt 11pt; margin: 8pt 0 10pt; break-inside: avoid; }
-  .box p:last-child { margin-bottom: 0; }
-  .pb { break-before: page; }
-  .avoid { break-inside: avoid; }
+  .info { text-align: right; margin: 0 0 16pt; }
+  .pb { break-before: auto; }
 </style>
 </head>
 <body>
 
-<div class="cover">
-  <h1>경두개 자기 자극(TMS)의 전자기장 모델링<br>코일 인덕턴스, 4층 두부 유도, 설계 트레이드오프 및 활동전위 발생</h1>
-  <div class="meta">EEC2204-004 전자기학 2 · 2026학년도 2학기 · 텀 프로젝트 최종 보고서</div>
-  <table>
-    <tr><th>학번</th><td style="width:110pt">&nbsp;</td><th>이름</th><td style="width:110pt">&nbsp;</td></tr>
-  </table>
-</div>
+<h1>전자기학 2 텀 프로젝트 보고서<br>경두개 자기 자극(TMS)의 전자기장 모델링</h1>
+<p class="info">학번: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 이름: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 
-<h2>0. 개요</h2>
-<p>본 보고서는 TMS 코일(원형, 8자형)에 사다리꼴 펄스 전류를 흘렸을 때 생기는 자기장과 4층 평면 두부 모델에 유도되는 전기장을 자기 준정역학(MQS) 근사로 계산하고, 그 전기장이 호지킨-헉슬리 뉴런을 발화시키는지 확인한 결과를 정리한 것이다. 수치 계산은 <code>task1_coil_field.py</code>, <code>task2_tissue_induction.py</code>, <code>task3_neuron.py</code>에 구현하였고, 그림과 수치표는 <code>make_figures.py</code>로 생성하였다. 주요 결과는 다음과 같다.</p>
-<table class="w">
-  <tr><th style="width:15%">Task</th><th class="l">주요 결과</th></tr>
-  <tr><td>1.1</td><td class="l">중심축 $B_z$의 수치해–해석해 최대 상대오차 $5.08\times10^{-5}$ ($<10^{-4}$). $\nabla\times\tilde{\mathbf A}=\tilde{\mathbf B}$ 상대오차 $6.2\times10^{-8}$(원형), $8.1\times10^{-8}$(8자형).</td></tr>
-  <tr><td>1.2</td><td class="l">$L_{\text{circ}}=21.16\ \mu\text{H}$ (세선 공식 대비 +0.29%), $L_{\text{fig8}}=32.89\ \mu\text{H}$, $M_{12}=+1.127\ \mu\text{H}$. 구동 전압 $\pm2.12$ kV(원형), $\pm3.29$ kV(8자형).</td></tr>
-  <tr><td>2.1</td><td class="l">평면 층 + 수평 코일에서 $\nabla V=0$, 따라서 $\mathbf E=-\tilde{\mathbf A}\,dI/dt$ (전도도와 무관).</td></tr>
-  <tr><td>2.2</td><td class="l">표적점 전기장: 8자형 244.4 V/m, 원형 0. 반치 면적: 8자형 45.2 cm², 원형 224.2 cm². CSF에서 $|\mathbf J|$ 최대 646 A/m²(8자형).</td></tr>
-  <tr><td>2.3</td><td class="l">날개 반경 20→60 mm에서 $d_{1/2}$ 7.0→14.2 mm, $S_{1/2}$ 21→100 cm²로 함께 증가(깊이–초점성 트레이드오프).</td></tr>
-  <tr><td>3.1</td><td class="l">8자형은 표적만 발화, 원형은 비표적만 발화. $E_{\text{th}}=80.88$ V/m, $I_{\text{peak,th}}=1.986$ kA, $V_{\text{coil,th}}=1.088$ kV, $W_{m,\text{th}}=64.8$ J, $h_{\max}=32.7$ mm.</td></tr>
-</table>
+<h2>개요</h2>
+<p>본 보고서는 TMS 코일(원형, 8자형)에 사다리꼴 펄스 전류를 흘렸을 때 생기는 자기장과 4층 평면 두부 모델에 유도되는 전기장을 자기 준정역학(MQS) 근사로 계산하고, 그 전기장이 호지킨-헉슬리 뉴런을 발화시키는지 확인한 결과를 정리한 것이다. 수치 계산은 <code>task1_coil_field.py</code>, <code>task2_tissue_induction.py</code>, <code>task3_neuron.py</code>에 구현하였고, 그림과 수치표는 <code>make_figures.py</code>로 생성하였다.</p>
 
 <!-- ====================================================================== -->
 <h2>1. Task 1.1 — 중심축 $B_z$ 해석해와 수치해 비교</h2>
@@ -74,9 +54,7 @@ $$d\mathbf l'\times\mathbf R=a\,d\phi'\begin{vmatrix}\mathbf a_x&\mathbf a_y&\ma
 =a\,d\phi'\,\big[(z-h)\cos\phi'\,\mathbf a_x+(z-h)\sin\phi'\,\mathbf a_y+a\,\mathbf a_z\big]$$
 <p>이다. $z$ 성분은 $a\sin^2\phi'+a\cos^2\phi'=a$에서 나온다. 이를 $\phi'=0\sim2\pi$로 적분하면 $\int_0^{2\pi}\cos\phi'\,d\phi'=\int_0^{2\pi}\sin\phi'\,d\phi'=0$이므로 수평 성분은 서로 마주 보는 전류 요소끼리 상쇄되어 사라지고, $z$ 성분만 남는다.</p>
 $$\mathbf B(0,0,z)=\frac{\mu_0NI}{4\pi}\cdot\frac{a\cdot a\cdot 2\pi}{R^3}\,\mathbf a_z$$
-<div class="box">
 $$B_z(0,0,z)=\frac{\mu_0 N I a^2}{2\left[a^2+(z-h)^2\right]^{3/2}}$$
-</div>
 <p>검산: $z=h$(루프 중심)에서 $B_z=\mu_0NI/(2a)$로 잘 알려진 결과와 일치하고, $|z-h|\gg a$에서는 $B_z\approx\mu_0 N I a^2/(2|z-h|^3)$로 자기 쌍극자($m=NI\pi a^2$)의 축상 자기장 $\mu_0 m/(2\pi|z-h|^3)$과 일치한다. 본 과제의 값($a=45$ mm, $h=5$ mm, $N=10$, $I=6$ kA)을 넣으면 두피 표면($z=0$)에서 $B_z=0.822$ T, 피질 깊이($z=-20$ mm)에서 $B_z=0.560$ T이다.</p>
 
 <h3>1.2 수치 모델</h3>
@@ -179,9 +157,7 @@ $$\int_\Omega\sigma|\nabla V|^2\,dv=\sum_{m=1}^4\left[\oint_{S_m}\sigma_mV\,\nab
   <li>무한원 면: $V\to0$이고 $V\nabla V$가 $1/r^2$보다 빨리 감소하므로 0이다.</li>
 </ul>
 <p>따라서 $\int_\Omega\sigma|\nabla V|^2\,dv=0$이고, $\sigma>0$이므로 조직 내 모든 점에서 $\nabla V=0$이다. $V$는 상수이며 무한원 조건에 의해 $V=0$이다.</p>
-<div class="box">
 $$V=0,\quad\nabla V=0\qquad\Longrightarrow\qquad\mathbf E(\mathbf r,t)=-\frac{\partial\mathbf A}{\partial t}=-\tilde{\mathbf A}(\mathbf r)\,\frac{dI}{dt}\qquad(\text{4개 층 모두})$$
-</div>
 <p>이 식에는 $\sigma_m$이 들어 있지 않다. 전기장은 코일 형상($\tilde{\mathbf A}$)과 전류 변화율만으로 정해지고, 전도도는 $\mathbf J=\sigma_m\mathbf E$를 통해 전류 밀도에만 영향을 준다.</p>
 <p><b>두개골이 TMS 전기장을 감쇠시키지 않는 이유.</b> 첫째, 전기장의 원인이 다르다. TMS의 전기장은 전극에서 흘려 넣은 전류가 아니라 시변 자속이 만드는 기전력이다. 조직은 비자성체이고 침투 깊이(두피·뇌 8.8 m, CSF 3.8 m, 두개골 50 m)가 두부보다 훨씬 커서 자기장은 두개골을 그대로 통과한다. 둘째, 유도 전기장이 층 경계면과 평행하다. $E_z=0$이므로 전류는 각 층 안에서 수평 폐곡선을 따라 돌 뿐 두개골을 가로지를 필요가 없다. 경계면을 수직으로 지나는 전류가 없으니 경계에 표면 전하가 쌓이지 않고, 1차 유도 전기장을 가리는 2차 전기장도 생기지 않는다. 두개골은 단지 자기 층 안에서 작은 전류 $\sigma_2\mathbf E$를 흘릴 뿐이다. 반면 두피 전기자극에서는 전류가 두피→두개골→CSF→뇌를 직렬로 지나야 하고 $J_z$가 연속이어야 하므로, 저항이 큰 두개골에서 전압 강하가 대부분 일어나고 전류의 상당 부분은 두피를 따라 옆으로 빠져나간다.</p>
 
